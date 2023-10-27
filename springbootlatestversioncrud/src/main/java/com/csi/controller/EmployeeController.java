@@ -61,4 +61,9 @@ public class EmployeeController {
         employeeServiceImpl.deleteDataById(empId);
         return ResponseEntity.ok("Data Deleted Successfully");
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> sayHello(){
+        return ResponseEntity.ok("Welcome Mayu");
+    }
 }
